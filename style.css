@@ -1,16 +1,17 @@
+/* Global Styles */
 *{
     box-sizing: border-box;
     padding: 0;
     margin: 0;
     /* border: 1px solid blue; */
 }
-
 a{
     text-decoration: none;
     color: black;
     cursor: pointer;
 }
 
+/* Header + Hero Styles */
 header{
     background-color: #F8F7F3 ;
     text-align: center;
@@ -27,6 +28,7 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
     gap: 28px;
     padding:  48px 0px;
 }
@@ -39,13 +41,17 @@ header{
     height: 100%;
 }
 
+/* Main Styles */
 main{
     display: flex;
     flex-direction: column;
     align-items: center;
 }
+main video{
+    width: 400px;
+}
 main section{
-    width: 1088px;
+    width: 800px;
     height: fit-content;
     background-color: #dca31e4d;
     margin: 50px 0px;
@@ -53,15 +59,61 @@ main section{
 main article{
     margin: 30px 60px
 }
-main article ul{
+main article p, ul, ol{
+    margin-bottom: 1rem;
+}
+main article h1, h2, h3, video{
+    margin-bottom: 1.5rem;
+    text-decoration: underline;
+}
+main article h6{
     position: relative;
-    left: 16px
+    top: -24px;
+    font-style: italic;
+    color: hsla(0, 0%, 0%, 0.4);
+}
+main article ul, ol{
+    position: relative;
+    left: 32px
+}
+main code{
+    background: #F8F7F3;
+    color: #F57148;
+}
+main table, th, td{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+main table td{
+    padding: 4px 8px 4px 4px
+}
+#resources a{
+    text-decoration: underline;
+    color: black;
 }
 
+/* Footer Styles */
 footer{
     background-color: #F8F7F3 ;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     padding: 24px 98px;
+}
+
+/* Media Query */
+@media screen and (max-width: 810px) {
+    main section{
+        width: 90vw;
+    }
+    main video{
+        width: 50vw;
+    }
+    footer{
+        flex-direction: column;
+        justify-content: center;            
+    }
+    footer p{
+        margin-bottom: 4px;
+    }
 }

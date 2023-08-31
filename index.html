@@ -18,7 +18,7 @@
             <article>
                 <h1>50 Days of Code</h1>
                 <br>
-                <p>Join me on a self taught adventure through the exciting and chanllenging world of full-stack development.</p>
+                <p>Ready to dive into the captivating universe of full-stack development? Join me for an exhilarating 50-day journey as we unlock the secrets, conquer challenges, and create something extraordinary together!</p>
             </article>
             <article>
                 <img src="./assets/NoBadDays.jpg" alt="No Bad Days">
@@ -30,19 +30,139 @@
 
         <section id="day-1">
             <article>
-                <h1>TITLE</h1>
-                <p>Summary of the Topic</p>
-            </article>
-            <article>
-                <h1>TIPS & TRICKS</h1>
-                <p>Wishdom you wish to share with the community</p>
-            </article>
-            <article>
-                <h1>RESOURCES</h1>
+                <h2>MacOS Terminal</h2>
+                <h6>August 31, 2023</h6>
+                <p>Picture a green font against a black backdrop – a scene often portrayed in movies involving hackers. These visuals are always captivating, yet they might seem distant for the average person. Join me as we take a step closer to realizing your 'hacker-esque' dreams.</p>
+                
+                <p>The terminal is a tool developers use to execute instructions on a computer. It provides text-based access to the operating system. Renowned for its speed, the terminal offers a plethora of utilities, from navigating files and folders to running scripts that automate tasks. Let's embark on our first journey into the world of the MacOS terminal.</p>
+                
+                <p>To open the terminal, simply use Spotlight Search (press <code>command</code> + <code>spacebar</code>), type 'terminal,' and hit return. Voila! A new terminal window should materialize on your screen. For many of us, the terminal might lack the style of the green/black design mentioned earlier; instead, it could be a white screen with black font. You can always go to <code>Terminal → Settings</code>, click on the <code>Profile</code> tab, and personalize the background and font color to your liking.</p>
+                
+                <p>Now that your terminal has a touch of swag, let's attempt to grasp how it functions. When I contemplate writing code or how the computer interprets a user's actions, I visualize every click I've made from the moment the computer is turned on to my current state. For instance, turning my computer on and logging into my account means I've accessed my MacOS and then my user account. So, if you were to type <code>pwd</code> into your terminal and press return, an address will be displayed – usually something like <code>/Users/&lt;your-username&gt;</code>. The command <code>pwd</code> shows your current location in the terminal; it stands for "print working directory." Let's break down our location or path: <code>/Users/&lt;your-username&gt;</code>. </p>
+                
                 <ul>
-                    <li><a href="#">Link 1</a></li>
-                    <li><a href="#">Link 2</a></li>
-                    <li><a href="#">Link 3</a></li>
+                    <li>The <code>/</code> symbolizes the root directory. All paths start from the root directory, analogous to booting your computer. </li>
+                    <li><code>/Users</code> signifies that you've entered the Users directory – the screen displaying all users on the computer. </li>
+                    <li><code>/Users/&lt;your-username&gt;</code> implies that you've logged into a specific account. This becomes your starting directory or path every time you launch your terminal.</li>
+                </ul>
+
+                <p>Before we proceed, let's pause for a quick sidebar. There are a few terms we should acquaint ourselves with:</p>
+                
+                <ul>
+                    <li><strong>Directory</strong>: Often used interchangeably with 'folder.' While not precisely the same, for now, let's assume they are: directory = folder.</li>
+                    <li><strong>Path</strong>: The location of a file or folder in a file system (e.g., <code>/Users/&lt;your-username&gt;</code>). I begin in the root directory (<code>/</code>), move into the Users directory (<code>/Users</code>), and then arrive at a user directory (<code>/User/&lt;your-username&gt;</code>).</li>
+                    <li><strong>Absolute Path</strong>: The exact location of a file or folder from the root directory (e.g., <code>/User/&lt;your-username&gt;</code>).</li>
+                    <li><strong>Relative Path</strong>: A reference to a file or folder relative to your current position.</li>
+                </ul>
+
+                <p>Feeling a bit perplexed? Don't worry; it'll make sense soon. Let's return to the main session.</p>
+  
+                <p>Now that we've logged into our account and used the <code>pwd</code> command to confirm our location, let's forge ahead. I can now type <code>ls</code> into my terminal to view the contents of the current directory. If I want to enter or access the Desktop directory, I can either:</p>
+                
+                <ol>
+                    <li>Use the absolute path: <code>cd /Users/&lt;your-username&gt;/Desktop</code></li>
+                    <li>Use the relative path: <code>cd Desktop</code></li>
+                </ol>
+                
+                <p>The text to the left of the cursor indicates your current directory. You can always use <code>pwd</code> to see the absolute path.</p>
+                
+                <p>Let's take a quick peek into how the temrinal compares to our computer's Graphical User Interface (GUI): </p>
+
+                <ul>
+                    <li>Type <code>pwd</code> into the terminal, to view your location</li>
+                    <li>Type <code>ls</code> into the terminal, to list the contents in the current directory</li>
+                    <li>Type <code>cd Desktop</code> to enter the 'Desktop' directory </li>
+                    <li>Create three folders in the 'Desktop' directory --- Type <code>mkdir <em>folderName</em></code> --- Keep an eye on the GUI!</li>
+                        <ul>
+                            <li><code>mkdir FolderOne</code></li>
+                            <li><code>mkdir "Folder Two"</code></li>
+                            <li><code>mkdir "Folder\ Three"</code></li>
+                        </ul>
+                    <li>Type <code>ls</code> into the terminal, to list the contents in the current directory</li>
+                    <li>Type <code>cd FolderOne</code> to enter the 'FolderOne' directory </li>
+                    <li>Type <code>touch document.txt</code>, to create a new file with the .txt extension --- Double click the respective folder in your GUI to see the results </li>
+                    <li>Repeat the above step to create a  file with a .pdf extension </li>
+                    <li>Type <code>cd ..</code> into the terminal to exit the current directory and return to the 'Desktop' directory</li>
+                    <li>You try! --- add a file to another folder.</li>
+                </ul>
+
+                <video src="./assets/Terminal_GUI.MOV" controls>video is not supported</video>
+
+                <p>Congratulations, you're now a few steps closer to becoming a programming wizard. Keep exploring your terminal and experiment with the commands in the next section.</p>
+                                
+
+            </article>
+            <article>
+                <h3>Tips &amp; Tricks</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Command</th>
+                            <th>Explanation</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                        <tr>
+                            <td><code>pwd</code></td>
+                            <td>Shows the absolute path of your current directory</td>
+                        </tr>
+                        <tr>
+                            <td><code>ls</code></td>
+                            <td>Displays files and folders in the current directory</td>
+                        </tr>
+                        <tr>
+                            <td><code>cd</code></td>
+                            <td>Changes directories</td>
+                        </tr>
+                        <tr>
+                            <td><code>cd ..</code></td>
+                            <td>Moves you back one directory</td>
+                        </tr>
+                        <tr>
+                            <td><code>cd ~</code></td>
+                            <td>Takes you to your home directory</td>
+                        </tr>
+                        <tr>
+                            <td><code>mkdir</code></td>
+                            <td>Creates a new folder</td>
+                        </tr>
+                        <tr>
+                            <td><code>touch</code></td>
+                            <td>Generates an empty file</td>
+                        </tr>
+                        <tr>
+                            <td><code>cp</code></td>
+                            <td>Copies a specified file and pastes it with a new name</td>
+                        </tr>
+                        <tr>
+                            <td><code>mv old/path new/path</code></td>
+                            <td>Moves a specified file to a designated location</td>
+                        </tr>
+                        <tr>
+                            <td><code>mv path/filename path/newname</code></td>
+                            <td>If paths are the same but with a different file name, the file's name changes</td>
+                        </tr>
+                        <tr>
+                            <td><code>rm</code></td>
+                            <td>Deletes the specified file</td>
+                        </tr>
+                        <tr>
+                            <td><code>history</code></td>
+                            <td>Displays the history of previous commands</td>
+                        </tr>
+                        <tr>
+                            <td><code>man</code></td>
+                            <td>Opens a help manual for a particular command</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </article>
+            <article id="resources">
+                <h3>Resources</h3>
+                <ul>
+                  <li><a href="https://support.apple.com/guide/terminal/welcome/mac" target="_blank">Terminal User Guide</a> - Apple’s guide to using the terminal</li>
+                  <li><a href="https://phoenixnap.com/kb/mac-terminal-commands" target="_blank">Mac Terminal Commands</a> - A guide to common terminal commands</li>
                 </ul>
             </article>
         </section>
@@ -50,9 +170,9 @@
     </main>
 
     <footer>
-        <p>©2023 AppBy·Mikael</p>
-        <p><a href="#">GitHub</a></p>
-        <p><a href="#">LinkedIn</a></p>
+        <p>©2023 AppByMikael</p>
+        <p><a href="https://github.com/objectmikael" target="_blank">GitHub</a></p>
+        <p><a href="https://www.linkedin.com/in/mborneo/" target="_blank">LinkedIn</a></p>
     </footer>
  
 </body>
