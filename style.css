@@ -80,6 +80,26 @@ main code{
     background: #F8F7F3;
     color: #F57148;
 }
+#code-block{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    background-color: #F8F7F3;
+    width: fit-content;
+    padding: 8px;
+    position: relative;
+    left: 32px;
+    margin-bottom: 1rem;
+}
+#indent-1{
+    margin-left: 1rem;
+}
+#indent-2{
+    margin-left: 2rem;
+}
+pre{
+    margin-left: 1rem;
+}
 main table, th, td{
     border: 1px solid black;
     border-collapse: collapse;

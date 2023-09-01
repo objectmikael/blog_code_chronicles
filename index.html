@@ -27,6 +27,101 @@
     </header>
 
     <main>
+        <section id="day-2">
+            <article>
+                <h2>HTML Basics: Getting Started with Web Development</h2>
+                <h6>September 1, 2023</h6>
+                <p>Ever wondered how words and images seamlessly materialize on our browsers? If you're curious about the inner workings of the web, you're in for a treat! Let's embark on a journey to explore the foundational language that brings web content to life: <strong>Hyper Text Markup Language (HTML)</strong>.</p>
+            
+                <p>When you navigate the web or interact with websites, you're interacting with HTML. It's like the blueprint of a webpage, defining the structure and layout of the user experience on the other side of the screen.</p>
+            
+                <p>To kickstart your HTML coding journey, you'll need a trusty code editor. My personal favorite? <strong>Visual Studio Code (VS Code)</strong>. While you wait for the download, why not create a folder named 'Intro to HTML' on your 'Desktop'? This is where you'll practice your newfound skills using the <strong>Terminal</strong>. We'll come back to that folder shortly. Once VS Code is downloaded, open it up and explore the interface. Remember, always open the folder you're working with by navigating to <code>File → Open Folder…</code>. Locate your 'Intro to HTML' folder and dive in. You're now primed to craft your very first .html file!</p>
+            
+                <p>The VS Code Explorer on the left side will showcase the folder you've just opened. Click on the folder, revealing several options. Opt for <code>New File</code>, and name it <code>index.html</code>. Voilà! You've just authored an .html document. Now, let's conjure up some magic.</p>
+            
+                <p>Type in <code>Hello World</code> into the index.html file. Now, journey to your desktop, crack open the 'Intro to HTML' folder, and double-click the index.html file. Watch as a new browser window (I prefer Chrome) springs to life, displaying the illustrious words <code>Hello World</code>. Congratulations, magician!</p>
+            
+                <p>But wait, it's not all enchantment and ease...</p>
+            
+                <p>The index.html file must be structured in a way that browsers can decode its contents. It craves the following elements:</p>
+            
+                <ol>
+                    <li><code>&lt;!DOCTYPE html&gt;</code> → A nod to the browser about the document type ahead.</li>
+                    <li><code>&lt;html&gt;&lt;/html&gt;</code> → The grand container of all HTML elements.</li>
+                </ol>
+
+                <aside id="code-block">
+                    <code>&lt;!DOCTYPE html&gt;</code>
+                    <code>&lt;html&gt;&lt;/html&gt;</code>
+                </aside>
+            
+                <p>Imagine <code>&lt;html&gt;&lt;/html&gt;</code> as a treasure chest cradling all the secrets necessary to whisk the contents of index.html into a visually captivating web page. But, we're not done yet.</p>
+            
+                <ol>
+                    <li><code>&lt;head&gt;&lt;/head&gt;</code> → A chamber for metadata.</li>
+                    <li><code>&lt;body&gt;&lt;/body&gt;</code> → The sanctuary for all our content.</li>
+                </ol>
+                
+                <aside id="code-block">
+                    <code>&lt;!DOCTYPE html&gt;</code>
+                    <code>&lt;html&gt;</code>
+                    <code id="indent-1">&lt;head&gt;&lt;/head&gt;</code>
+                    <code id="indent-1">&lt;body&gt;&lt;/body&gt;</code>
+                    <code>&lt;/html&gt;</code>
+                </aside>
+
+                <p>Within the head tags resides metadata that defines the document you're conjuring. This metadata won't be visible on the webpage.</p>
+            
+                <p>The body tags, on the other hand, house the content destined for display in the browser.</p>
+            
+                <p>As we sculpt the document's architecture, we add layers of detail, allowing the browser to interpret and enchant. I'll adorn the head with some metadata, but I encourage you to dive deeper into each element's significance.</p>
+                
+                <aside id="code-block">
+                    <code>&lt;!DOCTYPE html&gt;</code>
+                    <code>&lt;html&gt;</code>
+                    <code id="indent-1">&lt;head&gt;</code>
+                        <code id="indent-2">&lt;meta charset="UTF-8"&gt;</code>
+                        <code id="indent-2">&lt;meta http-equiv="X-UA-Compatible" content="IE=edge"&gt;</code>
+                        <code id="indent-2">&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</code>
+                        <code id="indent-2">&lt;title&gt;Intro to HTML&lt;/title&gt;</code>
+                    <code id="indent-1">&lt;/head&gt;</code>
+                    <code id="indent-1">&lt;body&gt;&lt;/body&gt;</code>
+                    <code>&lt;/html&gt;</code>                      
+                </aside>
+
+               
+
+                <p>Now we are ready to add content!</p>
+            
+                <p>Let's summon the following between the body tags: <code>&lt;h1&gt;Hello World&lt;/h1&gt;</code>.</p>
+            
+                <p>HTML wields an arsenal of tags to conjure diverse elements. These tags nestle within angle brackets (<code>&lt;&gt;</code>). Behold a few often-used spells:</p>
+            
+                <ul>
+                    <li><code>&lt;h1&gt;</code> to <code>&lt;h6&gt;</code>: Headings of varying importance, with <code>&lt;h1&gt;</code> as the mightiest and <code>&lt;h6&gt;</code> as the meekest.</li>
+                    <li><code>&lt;p&gt;</code>: A paragraph of text.</li>
+                    <li><code>&lt;img&gt;</code>: Summons an image to grace your web page.</li>
+                    <li><code>&lt;a&gt;</code>: Weaves a hyperlink to another realm.</li>
+                </ul>
+            
+                <p>Explore the HTML Cheat Sheet resource below to unearth more tags, further empowering your journey toward crafting captivating web pages!</p>
+            
+            </article>
+            <article>
+                <h3>Tips &amp; Tricks</h3>
+                <ul>
+                    <li>After birthing your index.html file, within the file type <code>!</code> and hit <code>return</code>. This invokes the HTML boilerplate from the Emmet toolkit, sparing you the chore of typing out the boilerplate!</li>
+                    <li>Utilize indentation – it's the cornerstone of impeccable structure, organization, and code readability.</li>
+                </ul>
+            </article>
+            <article id="resources">
+                <h3>Resources</h3>
+                <ul>
+                    <li><a href="https://code.visualstudio.com/download" target="_blank">VS Code Download</a> - Download link for Visual Studio Code.</li>
+                    <li><a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Cheatsheet" target="_blank">HTML Cheat Sheet</a> - MDN HTML Documentation</li>
+                </ul>
+            </article>
+        </section>
 
         <section id="day-1">
             <article>
