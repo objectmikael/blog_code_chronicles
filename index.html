@@ -27,6 +27,166 @@
     </header>
 
     <main>
+        <section id="day-3">
+            <article>
+                <h2>HTML: The Art of Structuring Your Webpage</h2>
+                <h6>September 2, 2023</h6>
+        
+                <p>Have you ever looked at a webpage and wondered how it's all organized? The secret lies in the structure, and in the web development realm, that structure is built with HTML. Today, we'll embark on a journey to create a basic webpage structure and then refine it using semantic HTML tags.</p>
+            
+                <p>In the vast landscape of web development, starting with a solid structure is crucial. The way you organize your content not only affects how your webpage looks but also how it performs in search engines and how accessible it is to everyone. Let's dive in!</p>
+            
+                <p>We'll begin with a simple webpage that is structured using &lt;div&gt; elements. These elements are like building blocks that help us organize content. Here's what our initial HTML structure will look like:</p>
+        
+                <aside id="code-block">
+                    <code>&lt;!DOCTYPE html&gt;</code>
+                    <code>&lt;html lang="en"&gt;</code>
+                        <code id="indent-1">&lt;head&gt;</code>
+                            <code id="indent-2">&lt;meta charset="UTF-8"&gt;</code>
+                            <code id="indent-2">&lt;meta http-equiv="X-UA-Compatible" content="IE=edge"&gt;</code>
+                            <code id="indent-2">&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</code>
+                            <code id="indent-2">&lt;title&gt;The Art of Structuring&lt;/title&gt;</code>
+                        <code id="indent-1">&lt;/head&gt;</code>
+            
+                        <code id="indent-1">&lt;body&gt;</code>
+                            <code id="indent-2">&lt;div&gt;</code>
+                                <code id="indent-3">&lt;h1&gt;Welcome to My Webpage&lt;/h1&gt;</code>
+                            <code id="indent-2">&lt;/div&gt;</code>
+                            
+                            <code id="indent-2">&lt;div&gt;</code>
+                                <code id="indent-3">&lt;ul&gt;</code>
+                                    <code id="indent-4">&lt;li&gt;&lt;a href="#"&gt;Home&lt;/a&gt;&lt;/li&gt;</code>
+                                    <code id="indent-4">&lt;li&gt;&lt;a href="#"&gt;About&lt;/a&gt;&lt;/li&gt;</code>
+                                    <code id="indent-4">&lt;li&gt;&lt;a href="#"&gt;Contact&lt;/a&gt;&lt;/li&gt;</code>
+                                <code id="indent-3">&lt;/ul&gt;</code>
+                            <code id="indent-2">&lt;/div&gt;</code>
+                            
+                            <code id="indent-2">&lt;div&gt;</code>
+                                <code id="indent-3">&lt;h2&gt;About Me&lt;/h2&gt;</code>
+                                <code id="indent-3">&lt;p&gt;This is where you'll learn all about me.&lt;/p&gt;</code>
+                            <code id="indent-2">&lt;/div&gt;</code>
+                            
+                            <code id="indent-2">&lt;div&gt;</code>
+                                <code id="indent-3">&lt;p&gt;&copy; 2023 My Webpage&lt;/p&gt;</code>
+                            <code id="indent-2">&lt;/div&gt;</code>
+                        <code id="indent-1">&lt;/body&gt;</code>
+                    <code>&lt;/html&gt;</code></code>
+                </aside>
+        
+                <p>To make our structure even more understandable, we can add unique identifiers using the <strong>id</strong> attribute to each &lt;div&gt; element. This helps with code readability and makes it easier to target specific parts of our webpage programmatically.</p>
+        
+                <aside id="code-block">
+                    <code>&lt;!DOCTYPE html&gt;</code>
+                    <code>&lt;html lang="en"&gt;</code>
+                        <code id="indent-1">&lt;head&gt;</code>
+                            <code id="indent-2">&lt;meta charset="UTF-8"&gt;</code>
+                            <code id="indent-2">&lt;meta http-equiv="X-UA-Compatible" content="IE=edge"&gt;</code>
+                            <code id="indent-2">&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</code>
+                            <code id="indent-2">&lt;title&gt;The Art of Structuring&lt;/title&gt;</code>
+                        <code id="indent-1">&lt;/head&gt;</code>
+            
+                        <code id="indent-1">&lt;body&gt;</code>
+                            <code id="indent-2">&lt;div id="header"&gt;</code>
+                                <code id="indent-3">&lt;h1&gt;Welcome to My Webpage&lt;/h1&gt;</code>
+                            <code id="indent-2">&lt;/div&gt;</code>
+                            
+                            <code id="indent-2">&lt;div id="nav"&gt;</code>
+                                <code id="indent-3">&lt;ul&gt;</code>
+                                    <code id="indent-4">&lt;li&gt;&lt;a href="#"&gt;Home&lt;/a&gt;&lt;/li&gt;</code>
+                                    <code id="indent-4">&lt;li&gt;&lt;a href="#"&gt;About&lt;/a&gt;&lt;/li&gt;</code>
+                                    <code id="indent-4">&lt;li&gt;&lt;a href="#"&gt;Contact&lt;/a&gt;&lt;/li&gt;</code>
+                                <code id="indent-3">&lt;/ul&gt;</code>
+                            <code id="indent-2">&lt;/div&gt;</code>
+                            
+                            <code id="indent-2">&lt;div id="main"&gt;</code>
+                                <code id="indent-3">&lt;h2&gt;About Me&lt;/h2&gt;</code>
+                                <code id="indent-3">&lt;p&gt;This is where you'll learn all about me.&lt;/p&gt;</code>
+                            <code id="indent-2">&lt;/div&gt;</code>
+                            
+                            <code id="indent-2">&lt;div id="footer"&gt;</code>
+                                <code id="indent-3">&lt;p&gt;&copy; 2023 My Webpage&lt;/p&gt;</code>
+                            <code id="indent-2">&lt;/div&gt;</code>
+                        <code id="indent-1">&lt;/body&gt;</code>
+                    <code>&lt;/html&gt;</code></code>
+                </aside>
+                
+                <p>In a well-structured webpage, the header typically features a warm welcome or branding at the very top. The navigation section, indicated by the &lt;nav&gt; element, defines links that help users navigate your site. The main content area, enclosed within the &lt;main&gt; element, holds the bulk of your webpage's content. Lastly, the footer, positioned at the bottom, often contains supplementary information and links.</p>
+
+                <p>While &lt;div&gt; elements provide structure, HTML5 introduced a set of semantic tags that add meaning to your webpage's structure. Let's refactor our initial HTML using these semantic tags for a more accessible and SEO-friendly result.</p>
+        
+                <aside id="code-block">
+                    <code>&lt;!DOCTYPE html&gt;</code>
+                    <code>&lt;html lang="en"&gt;</code>
+                        <code id="indent-1">&lt;head&gt;</code>
+                            <code id="indent-2">&lt;meta charset="UTF-8"&gt;</code>
+                            <code id="indent-2">&lt;meta http-equiv="X-UA-Compatible" content="IE=edge"&gt;</code>
+                            <code id="indent-2">&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</code>
+                            <code id="indent-2">&lt;title&gt;The Art of Structuring&lt;/title&gt;</code>
+                        <code id="indent-1">&lt;/head&gt;</code>
+            
+                        <code id="indent-1">&lt;body&gt;</code>
+                            <code id="indent-2">&lt;header&gt;</code>
+                                <code id="indent-3">&lt;h1&gt;Welcome to My Webpage&lt;/h1&gt;</code>
+                            <code id="indent-2">&lt;/header&gt;</code>
+                            
+                            <code id="indent-2">&lt;nav&gt;</code>
+                                <code id="indent-3">&lt;ul&gt;</code>
+                                    <code id="indent-4">&lt;li&gt;&lt;a href="#"&gt;Home&lt;/a&gt;&lt;/li&gt;</code>
+                                    <code id="indent-4">&lt;li&gt;&lt;a href="#"&gt;About&lt;/a&gt;&lt;/li&gt;</code>
+                                    <code id="indent-4">&lt;li&gt;&lt;a href="#"&gt;Contact&lt;/a&gt;&lt;/li&gt;</code>
+                                <code id="indent-3">&lt;/ul&gt;</code>
+                            <code id="indent-2">&lt;/nav&gt;</code>
+                            
+                            <code id="indent-2">&lt;main&gt;</code>
+                                <code id="indent-3">&lt;h2&gt;About Me&lt;/h2&gt;</code>
+                                <code id="indent-3">&lt;p&gt;This is where you'll learn all about me.&lt;/p&gt;</code>
+                            <code id="indent-2">&lt;/main&gt;</code>
+                            
+                            <code id="indent-2">&lt;footer&gt;</code>
+                                <code id="indent-3">&lt;p&gt;&copy; 2023 My Webpage&lt;/p&gt;</code>
+                            <code id="indent-2">&lt;/footer&gt;</code>
+                        <code id="indent-1">&lt;/body&gt;</code>
+                    <code>&lt;/html&gt;</code></code>
+                </aside>
+        
+                <p>By using semantic tags like &lt;header&gt;, &lt;nav&gt;, &lt;main&gt;, and &lt;footer&gt;, we've not only improved the clarity of our code but also made it more accessible to users and search engines. Semantic HTML tells browsers and screen readers what each section of your webpage represents.</p>
+        
+            </article>
+            <article>
+                <h3>Tips &amp; Tricks</h3>
+                <ul>
+                    <li>Understanding how to structure your content effectively is a fundamental skill in web development.</li>
+                    <li><strong>Start Big, Then Refine:</strong> Consider structuring your webpage by starting with larger containers (header, main, footer) and then breaking them down further:</li>
+                </ul>
+                <aside id="code-block">
+                    <code>&lt;!DOCTYPE html&gt;</code>
+                    <code>&lt;html lang="en"&gt;</code>
+                        <code id="indent-1">&lt;head&gt;</code>
+                            <code id="indent-2">&lt;meta charset="UTF-8"&gt;</code>
+                            <code id="indent-2">&lt;meta http-equiv="X-UA-Compatible" content="IE=edge"&gt;</code>
+                            <code id="indent-2">&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</code>
+                            <code id="indent-2">&lt;title&gt;Document&lt;/title&gt;</code>
+                        <code id="indent-1">&lt;/head&gt;</code>
+            
+                        <code id="indent-1">&lt;body&gt;</code>
+                            <code id="indent-2">&lt;header&gt;&lt;/header&gt;</code>
+                            
+                            <code id="indent-2">&lt;main&gt;&lt;/main&gt;</code>
+                            
+                            <code id="indent-2">&lt;footer&gt;&lt;/footer&gt;</code>
+                        <code id="indent-1">&lt;/body&gt;</code>
+                    <code>&lt;/html&gt;</code></code>
+                </aside>
+        
+            </article>
+            <article id="resources">
+                <h3>Resources</h3>
+                <ul>
+                    <li><a href="https://www.w3schools.com/html/html5_semantic_elements.asp">Semantic Elements</a> - A list of semantic elements by W3Schools.</li>
+                </ul>
+            </article>
+        </section>
+
         <section id="day-2">
             <article>
                 <h2>HTML Basics: Getting Started with Web Development</h2>

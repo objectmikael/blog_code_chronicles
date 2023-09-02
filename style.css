@@ -97,9 +97,13 @@ main code{
 #indent-2{
     margin-left: 2rem;
 }
-pre{
-    margin-left: 1rem;
+#indent-3{
+    margin-left: 3rem;
 }
+#indent-4{
+    margin-left: 4rem;
+}
+
 main table, th, td{
     border: 1px solid black;
     border-collapse: collapse;
