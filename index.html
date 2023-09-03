@@ -27,6 +27,80 @@
     </header>
 
     <main>
+        <section id="day-4">
+            <article>
+                <h2>CSS: The Magic Wand of Web Styling 🎨✨</h2>
+                <h6>September 3, 2023</h6>
+        
+                <p>Have you ever wondered how websites achieve their stunning visual designs? The secret sauce is Cascading Style Sheets (CSS), a powerful language that brings life and style to the structure provided by HTML. It's what allows you to control the layout, colors, fonts, and other visual aspects of your web pages. In this journey through the world of CSS, we'll explore how it can transform a plain webpage into a visually captivating masterpiece.</p>
+                               
+                <p>There are a few ways to add CSS styles to your HTML documents, but today, we'll focus on the external stylesheet method.</p>
+                
+                <p>To get started, you need to create an external stylesheet. Here's how:</p>
+                
+                <ol>
+                    <li><strong>Navigate to Your HTML Folder:</strong> Find the folder where your HTML file is located.</li>
+                    <li><strong>Create a New File:</strong> In that folder, create a new file and name it <code>styles.css</code>. This file will be your styling headquarters, where you'll work your magic.</li>
+                </ol>
+               
+                <p>Now, here's where the magic happens: we need to link this stylesheet to our HTML document. We do this using the <code>&lt;link&gt;</code> tag.</p>
+                
+                <aside id="code-block">
+                    <code>&lt;link rel="stylesheet" href="styles.css"&gt;</code>
+                </aside>
+        
+                <p>The new element defines a relationship and the location of the relationship relative to the HTML file location. This new element should be placed between the <code>&lt;head&gt;</code> tags and above the <code>&lt;title&gt;</code> tag.</p>
+        
+                <aside id="code-block">
+                    <code>&lt;head&gt;</code>
+                    <code id="indent-1">&lt;meta charset="UTF-8"&gt;</code>
+                    <code id="indent-1">&lt;meta http-equiv="X-UA-Compatible" content="IE=edge"&gt;</code>
+                    <code id="indent-1">&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</code>
+                    <code id="indent-1">&lt;link rel="stylesheet" href="styles.css"&gt;</code>
+                    <code id="indent-1">&lt;title&gt;CSS: The Magic Wand of Web Styling&lt;/title&gt;</code>
+                    <code>&lt;/head&gt;</code>
+                </aside>
+        
+                <p>Now that your HTML and CSS are connected, it's time to sprinkle some styling magic. We use CSS selectors to target HTML elements and apply styles. For example, you can change the background color of your <code>&lt;header&gt;</code> like this:</p>
+        
+                <aside id="code-block">
+                    <code>header { </code>
+                       <code id="indent-1"> background-color: gray;</code>
+                    <code>}</code>
+                </aside>
+        
+                <p>Let's enhance our webpage even further. How about changing the background color of the footer to black and the text to white? Here's how you can do it:</p>
+        
+                <aside id="code-block">
+                    <code>header { </code>
+                       <code id="indent-1"> background-color: gray;</code>
+                    <code>}</code>
+                    <code>footer { </code>
+                       <code id="indent-1"> background-color: black;</code>
+                       <code id="indent-1"> color: white;</code>
+                    <code>}</code>
+                </aside>
+        
+                <p>With CSS, you've got the magic wand to create web designs that dazzle and inspire. So go ahead, unleash your creativity and make your web pages truly shine! 🚀🎨🌟</p>
+                <p>Check out the resource below for a handy reference of various properties:</p>
+                
+            </article>
+        
+            <article>
+                <h3>Tips &amp; Tricks</h3>
+                <ul>
+                    <li> Add a semicolon after each property in your CSS file to avoid errors</li>
+                </ul>
+            </article>
+
+            <article id="resources">
+                <h3>Resources</h3>
+                <ul>
+                    <li><a href="https://web.stanford.edu/group/csp/cs21/csscheatsheet.pdf" target="_blank">CSS Cheatsheet</a> - A CSS PDF highlighting various properties from Stanford.</li>
+                </ul>
+            </article>
+        </section>
+                
         <section id="day-3">
             <article>
                 <h2>HTML: The Art of Structuring Your Webpage</h2>
