@@ -27,9 +27,97 @@
     </header>
 
     <main>
+        <section id="day-5">
+            <article>
+                <h2>Getting Started with Git and GitHub for Web Development</h2>
+                <h6>September 4, 2023</h6>
+        
+                <p>You've just created a stunning webpage, and now it's time to share it with the world. Enter Git and GitHub – your allies in the journey of version control and collaborative web development.</p>
+            
+                <p>Git is a superhero among version control systems. It helps you keep track of changes to your files over time, a lifesaver when you're working with others or need to revert to a previous version of your code. GitHub, on the other hand, is the ultimate platform built around Git, offering online storage, collaboration tools, and version tracking.</p>
+                
+                <p><strong>Git and GitHub are not the same!</strong></p>
+            
+                <p>Before diving in, let's get familiar with some crucial terms:</p>
+        
+                <ul>
+                    <li><strong>Git Repository:</strong> Think of it as a time machine for your project, storing every change, who made it, and when. It's your ticket to accessing past versions of your code.</li>
+                    <li><strong>Git Branches:</strong> These allow multiple developers to work on the same codebase without chaos. The "main" branch holds the stable code.</li>
+                    <li><strong>Local Repository:</strong> Your playground for coding, where you interact with Git on your machine.</li>
+                    <li><strong>Remotes:</strong> These are Git repositories typically hosted online (like on GitHub). They keep your local repository in sync with the remote one.</li>
+                    <li><strong>Forking:</strong> Copying a repository to your own GitHub account. It's handy for making changes without affecting the original.</li>
+                    <li><strong>Cloning:</strong> Making a local copy of a remote repository. It's like having a duplicate of someone's project on your machine.</li>
+                    <li><strong>Pushing:</strong> Sending your local changes to the remote repository, akin to launching an aircraft on a journey.</li>
+                    <li><strong>Pulling:</strong> Fetching and merging changes from the remote repository into your local one, ensuring your code is up-to-date.</li>
+                </ul>
+                
+                <p>Setting up Git and GitHub is quite involved, so you’ll need to following the documentation to get those set up!</p>
+                    
+                <p>When starting a new project, we want to turn a folder/directory into a Git repository, allowing you to track changes within it. Navigate to the project folder in your terminal and run <code>git init</code>.</p>
+                
+                <p>At the same time, let's create a new repository on GitHub.</p>
+                
+                <ol>
+                    <li>Log in to your GitHub account.</li>
+                    <li>Click on the "+" sign in the top-right corner of the page and select "New repository."</li>
+                    <li>Choose a name for your repository, such as "personal-website."</li>
+                    <li>Optionally, you can add a description for your repository.</li>
+                    <li>Keep the repository as public.</li>
+                    <li>Click on the "Create repository" button.</li>
+                </ol>
+        
+                <p>Now that we’ve made changes to our project locally we want to update our GitHub repository to reflect those changes. We now have to go through a series of commands in our terminal. This process is analogous of going from one location to another via an airplane.</p>
+            
+                <ul>
+                    <li>After making changes locally, use <code>git add .</code> to stage them.</li>
+                    <ul>
+                        <li><em>Git add</em> is like getting all the passengers scanned and boarded on the aircraft. The aircraft is still at the gate.</li>
+                    </ul>
+                    
+                    <li>The next command is <code>git commit -m "&lt;insert a descriptive message&gt;"</code></li>
+                    <ul>
+                        <li>The aircraft has left the gate, and is on the runway. Waiting to take-off.</li>
+                    </ul>
+                                 
+                    <li>To push your changes to GitHub, run <code>git push &lt;remote-name&gt; &lt;remote-branch-name&gt;</code>. <code>git push origin main</code> (for starters).</li>                  
+                    <ul>
+                        <li>Imagine your aircraft taking off, in transit, landing, taxiing, and deboarding at its destination.</li>
+                    </ul>
+                </ul>
+
+                <p>With your GitHub repository now mirroring your local one, remember to commit changes consistently and push them to your remote repository. Git and GitHub are powerful tools, and mastering them will elevate your web development game.</p>
+            </article>
+        
+        
+            <article>
+                <h3>Tips &amp; Tricks</h3>
+                <ul>
+                    <li><code>git init</code> - Start a new Git repository for your project.</li>
+                    <li><code>git add .</code> - Stage changes for the next commit.</li>
+                    <li><code>git commit -m "commit message"</code> - Create a checkpoint with a descriptive message.</li>
+                    <li><code>git push &lt;remote-name&gt; &lt;remote-branch-name&gt;</code> - Send local commits to a remote repository.</li>
+                    <li><code>git clone &lt;repository-url&gt;</code> - Make a local copy of a remote repository.</li>
+                    <li><code>git pull &lt;remote-name&gt; &lt;remote-branch-name&gt;</code> - Fetch and merge updates from a remote repository.</li>
+                </ul>
+            </article>
+              
+            <article id="resources">
+                <h3>Resources</h3>
+                <ul>
+                    <li><a href="https://git-scm.com/download/mac" target="_blank">Installing Git On Mac</a> - Recommend going the route of Homebrew</li>
+                    <li><a href="https://training.github.com/downloads/github-git-cheat-sheet.pdf" target="_blank">Git Cheat Sheet</a> - PDF from GitHub training team</li>
+                    <li>Configuration Documentation</li>
+                    <ul>
+                        <li><a href="https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent" target="_blank">Generating a new SSH Key</a></li>
+                        <li><a href="https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account" target="_blank">Adding a new SSH Key</a></li>
+                    </ul>
+                </ul>
+            </article>
+        </section>
+
         <section id="day-4">
             <article>
-                <h2>CSS: The Magic Wand of Web Styling 🎨✨</h2>
+                <h2>CSS: The Magic Wand of Web Styling</h2>
                 <h6>September 3, 2023</h6>
         
                 <p>Have you ever wondered how websites achieve their stunning visual designs? The secret sauce is Cascading Style Sheets (CSS), a powerful language that brings life and style to the structure provided by HTML. It's what allows you to control the layout, colors, fonts, and other visual aspects of your web pages. In this journey through the world of CSS, we'll explore how it can transform a plain webpage into a visually captivating masterpiece.</p>
@@ -81,7 +169,7 @@
                     <code>}</code>
                 </aside>
         
-                <p>With CSS, you've got the magic wand to create web designs that dazzle and inspire. So go ahead, unleash your creativity and make your web pages truly shine! 🚀🎨🌟</p>
+                <p>With CSS, you've got the magic wand to create web designs that dazzle and inspire. So go ahead, unleash your creativity and make your web pages truly shine!</p>
                 <p>Check out the resource below for a handy reference of various properties:</p>
                 
             </article>
