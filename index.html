@@ -27,6 +27,97 @@
     </header>
 
     <main>
+        <section id="day-8">
+            <article>
+                <h2>JavaScript: Variables and Data Types</h2>
+                <h6>September 7, 2023</h6>
+        
+                <p>JavaScript empowers developers to bring interactivity to webpages through the execution of specific lines of code. However, working with the <code>script.js</code> file might not seem intuitive at first. When approaching coding, think of it as a written language rather than a spoken one. Most of the time, you must break down your actions into precise steps for the program to understand your intentions. For instance, while we casually say "one," in programming, we need to be explicit. We achieve this precision using variables.</p>
+        
+                <h4>What are Variables?</h4>
+                <p>Variables are like containers that allow us to store and manage data in our programs. They are essential for making our code understandable and interactive.</p>
+                
+                <ol>
+                    <li><strong>Declaration:</strong> We start by declaring a variable using keywords like "let" or "const" (we'll dive into these later).</li>
+                    <li><strong>Descriptive Name:</strong> Next, we give our variable a meaningful name, something that reflects the data it holds. For example, <code>let number</code>.</li>
+                    <li><strong>Equality:</strong> We use the equality symbol (<code>=</code>) to assign a value to our variable. For instance, <code>let number = 1</code>.</li>
+                    <li><strong>Value:</strong> Finally, we specify the actual value the variable holds. In this case, we've told the program that there's a variable called "number," and it contains the value 1.</li>
+                </ol>
+        
+                <p>A quick note: You might come across the keyword "var" in older code, but it's considered outdated. Stick with "let" and "const" for modern JavaScript.</p>
+        
+                <h4>Data Types</h4>
+                <p>Now that we know how to declare variables let's explore different types of data they can hold. Think of data types as the building blocks of your program. Here are some fundamental ones:</p>
+                
+                <ul>
+                    <li><strong>Number Data Type:</strong> Use this to represent numeric values. Numbers can be integers (whole numbers) or floating-point numbers (numbers with decimals). For example:
+                        <aside id="code-block">
+                            <code>let age = 25; <br> let price = 9.99;</code>
+                        </aside>
+                    </li>
+                    <li><strong>String Data Type:</strong> Use this to represent text, and enclose it in double quotes, single quotes, or backticks:
+                        <aside id="code-block">
+                            <code>let greeting = "Hello!";</code>
+                        </aside>
+                    </li>
+                    <li><strong>Boolean Data Type:</strong> This type represents true or false values. It's often used for conditions and logic:
+                        <aside id="code-block">
+                            <code>let isCodingFun = true; <br> let isRaining = false;</code>
+                        </aside>
+                    </li>
+                    <li><strong>Null Data Type:</strong> Null represents the intentional absence of any object value. It's often used to signify that a variable should have no value:
+                        <aside id="code-block">
+                            <code>let emptyBox = null;</code>
+                        </aside>
+                    </li>
+                    <li><strong>Undefined Data Type:</strong> Undefined is a variable that has been declared but hasn't been assigned a value yet. It's the default value of a declared variable:
+                        <aside id="code-block">
+                            <code>let notDefinedYet; // This is undefined</code>
+                        </aside>
+                    </li>
+                </ul>
+        
+                <p>With these data types, we can build complex programs and make our code more expressive.</p>
+                
+                <br>
+                
+                <p>In JavaScript, you have two primary ways to declare variables: <code>let</code> and <code>const</code>. These keywords have different behaviors:</p>
+                
+                <ul>
+                    <li><strong><code>let</code>:</strong> Variables declared with <code>let</code> can be reassigned. This means you can change their values after the initial assignment.</li>
+                    <li><strong><code>const</code>:</strong> Variables declared with <code>const</code> are constant, meaning their values cannot be reassigned after the initial assignment. It's used for values that should remain unchanged throughout the program.</li>
+                </ul>
+        
+                <p>Let's illustrate this with examples:</p>
+        
+                <aside id="code-block">
+                    <code>let count = 10; 
+                        <br> count = 20; // Valid, you can reassign 'count' with 'let' 
+                        <br> console.log(count); // Outputs 20
+                        <br><br> const pi = 3.14159;
+                        <br> pi = 3.14; // Invalid, you can't reassign 'pi' with 'const'
+                        <br> console.log(pi); // Outputs an error
+                    </code>
+                </aside>
+        
+                <p>In the first example, <code>count</code> is declared with <code>let</code>, so you can change its value later. In the second example, <code>pi</code> is declared with <code>const</code>, so attempting to change its value results in an error.</p>
+                
+                <p>Understanding when to use <code>let</code> and <code>const</code> is crucial for writing robust and maintainable code. Use <code>let</code> for variables that may change, and use <code>const</code> for values that should remain constant.</p>
+        
+                <h4>Practical Usage</h4>
+                <p>Now that we have a bunch of variables, how do we visualize them? We use the <code>console.log()</code> function to display the value of a variable in the terminal. For instance, if we have a variable called <code>greeting</code>, we can see its value by typing <code>console.log(greeting)</code>.</p>
+        
+                <p>So, whether it's a number crunching or text processing, variables and data types are the foundation of JavaScript, allowing us to communicate precisely with our programs.</p>
+            </article>
+              
+            <article id="resources">
+                <h3>Resources</h3>
+                <ul>
+                    <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures" target="_blank">JavaScript Data Types</a> - Explore Data Types further with MDN's reference.</li>
+                </ul>
+            </article>
+        </section>
+
         <section id="day-7">
             <article>
                 <h2>JavaScript: The Language of Web Interactivity</h2>
