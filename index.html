@@ -27,6 +27,194 @@
     </header>
 
     <main>
+        <section id="day-11">
+            <article>
+                <h2>JavaScript: Control Flow - Loops</h2>
+                <h6>September 10, 2023</h6>
+        
+                <p>In the realm of application logic, loops reign supreme, determining what happens, how it unfolds, and for how
+                    long. Dive into the symphony of loops, where various methods lead to the same destination in handling iterative
+                    tasks. Among the loops, one particularly handy tool stands out...</p>
+                
+                <h4>for Loops</h4>
+                
+                <p>When it comes to arrays, the <code>for</code> loop takes the spotlight, enabling the execution of code for each
+                    index within the array. Let's harness its syntax:</p>
+                
+                <aside id="code-block">
+                    <code>
+                        const fruit = ['apple', 'orange', 'kiwi', 'banana'];
+                        <br><br>for (let i = 0; i &lt; fruit.length; i++) {
+                        <br>&nbsp;&nbsp;&nbsp; // code to execute for each index
+                        <br>}
+                    </code>
+                </aside>
+                
+                <p>Breaking it down:</p>
+                
+                <ul>
+                    <li><strong>Initialization:</strong> Begin by specifying where in the array you want to start. <code>let i =
+                            0</code> sets the initial index to zero (the first value).</li>
+                    <li><strong>Condition:</strong> Define where in the array you want to stop. Typically, we iterate up to the
+                        last value in the array, denoted by <code>i &lt; fruit.length</code>.</li>
+                    <li><strong>Iteration:</strong> Specify how you want to traverse the array. Use <code>i += 1</code> or the
+                        shorthand <code>i++</code> to go through values one after another. Adjust as needed, like
+                        <code>i += 2</code> for every other value or <code>i += 3</code> for every third value, and so on.</li>
+                </ul>
+                
+                <p>For instance, if our goal is to print the value of each index in the <code>fruit</code> array using a
+                    <code>for</code> loop, the code would look like this:</p>
+                
+                <aside id="code-block">
+                    <code>
+                        for (let i = 0; i &lt; fruit.length; i++) {
+                        <br>&nbsp;&nbsp;&nbsp; console.log(fruit[i]);
+                        <br>}
+                    </code>
+                </aside>
+            </article>
+              
+            <article id="resources">
+                <h3>Resources</h3>
+                <ul>
+                    <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for" target="_blank"> MDN Web Docs</a> -
+                            for loops</li>
+                </ul>
+            </article>
+        </section>
+
+        <section id="day-10">
+            <article>
+                <h2>JavaScript: Control Flow - Conditionals</h2>
+                <h6>September 9, 2023</h6>
+        
+                <p>In the vast landscape of programming, control flow serves as the director of the script, orchestrating the sequence of actions based on specific conditions or loops. At the heart of this control lies the powerful tool of conditionals, guiding our code through decision-making pathways.</p>
+        
+                <h4>if/else Statements</h4>
+        
+                <p>The cornerstone of conditionals is the <code>if/else</code> statement. Behold its syntax:</p>
+        
+                <aside id="code-block">
+                    <code>
+                        if (/* condition is true */) {
+                        <br> &nbsp;&nbsp;&nbsp; // run this code
+                        <br>} else if (/* another condition is true */) {
+                        <br> &nbsp;&nbsp;&nbsp; // run this code 
+                        <br>} else if (/* yet another condition is true */) {
+                        <br> &nbsp;&nbsp;&nbsp; // run this code 
+                        <br>} else {
+                        <br> &nbsp;&nbsp;&nbsp; // run this code as a catch-all 
+                        <br>}
+                    </code>
+                </aside>
+        
+                <p>One of the beauties of <code>if/else</code> statements is their flexibility to handle various conditions. The code is read from top to bottom, and once a condition is true, the program executes the corresponding code and gracefully exits the set of statements.</p>
+        
+                <p>Let's put this to the test with a day-of-the-week scenario:</p>
+        
+                <aside id="code-block">
+                    <code>
+                        // declare a variable as a test case 
+                        <br>let day = 'Friday'
+        
+                        <br><br>// create your statements
+                        <br>if(day === 'Monday') {
+                        <br> &nbsp;&nbsp;&nbsp; console.log('Ugh. Back to work.')
+                        <br>} else if(day === 'Wednesday') {
+                        <br> &nbsp;&nbsp;&nbsp; console.log('So close to the weekend!')
+                        <br>} else if (day === 'Friday') {
+                        <br> &nbsp;&nbsp;&nbsp; console.log('It\'s the weekend, time for some self-care!!!')
+                        <br>} else {
+                        <br> &nbsp;&nbsp;&nbsp; console.log('Just another day')
+                        <br>}
+                    </code>
+                </aside>
+        
+                <p>Remember, when comparing variables to values, use <code>===</code> to check for equality.</p>
+        
+                <h4>Additional Operators</h4>
+        
+                <p>Beyond equality, conditionals involve an arsenal of operators to perform comparisons:</p>
+        
+                <ul>
+                    <li><code><strong>&gt;</strong></code> : greater than</li>
+                    <li><code><strong>&lt;</strong></code> : less than</li>
+                    <li><code><strong>&gt;=</strong></code> : greater than or equal to</li>
+                    <li><code><strong>&lt;=</strong></code> : less than or equal to</li>
+                    <li><code><strong>!==</strong></code> : not equal to (<code>!</code> is known as the bang operator)</li>
+                </ul>
+        
+                <p>These are the basics of <code>if/else</code> statements and operators, laying the foundation for more advanced conditionals like ternary operators and switch statements. As you progress, these concepts will become your allies in crafting sophisticated JavaScript scripts.</p>
+        
+            </article>
+              
+            <article id="resources">
+                <h3>Resources</h3>
+                <ul>
+                    <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Control_flow_and_error_handling" target="_blank">MDN Web Docs</a> - JavaScript Control Flow</li>
+                </ul>
+            </article>
+        </section>
+
+        <section id="day-9">
+            <article>
+                <h2>JavaScript: Arrays</h2>
+                <h6>September 8, 2023</h6>
+        
+                <p>Arrays are the unsung heroes of programming. They're like versatile containers that help us store, organize, and manage data effortlessly. Let's dive into the world of JavaScript arrays and see how they work their magic.</p>
+        
+                <h4>Array Basics</h4>
+        
+                <p>In JavaScript, arrays are declared just like variables, but with a twist. They use square brackets to signify their array nature, like this:</p>
+        
+                <aside id="code-block">
+                    <code>let array = ['itemOne', 'itemTwo', 'itemThree'];</code>
+                </aside>
+        
+                <p>Each item in an array is stored sequentially and indexed, starting at 0 and ending at <code>length - 1</code>. Let's break down the array above:</p>
+        
+                <ul>
+                    <li><code>'itemOne'</code> is at index 0</li>
+                    <li><code>'itemTwo'</code> is at index 1</li>
+                    <li><code>'itemThree'</code> is at index 2</li>
+                    <li>While there are three elements in the array, the last index is always one less than the array's length.</li>
+                </ul>
+        
+                <h4>Getting the Length</h4>
+        
+                <p>You can easily find out how many elements are in an array using the <code>length</code> property:</p>
+        
+                <aside id="code-block">
+                    <code>
+                        let array = ['itemOne', 'itemTwo', 'itemThree'];
+                        <br> array.length; // This will give you 3
+                    </code>
+                    </aside>
+        
+                <h4>Accessing Elements</h4>
+        
+                <p>To fetch a single element, use bracket notation. Specify the desired index inside square brackets. For instance, to access <code>'itemTwo'</code> from our array:</p>
+        
+                <aside id="code-block"> 
+                    <code>array[1]; // This will give you 'itemTwo'</code>
+                </aside>
+        
+                <h4>Array Superpowers</h4>
+        
+                <p>Arrays can do much more than storing data. They're your trusty sidekick for manipulating data. You can add, remove, or modify elements, among other things. Check out the resources below to explore these superpowers further.</p>
+        
+                <p>Arrays might seem simple, but they're a fundamental building block in programming. Mastering them will open doors to more complex data manipulation and make your code more efficient. Happy coding! 🔥👩‍💻👨‍💻</p> 
+            </article>
+              
+            <article id="resources">
+                <h3>Resources</h3>
+                <ul>
+                    <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array" target="_blank">MDN Web Docs - Arrays</a> - Detailed documentation with examples.</li>
+                    <li><a href="https://javascript.info/array" target="_blank">JavaScript.info - Arrays</a> - Beginner-friendly tutorials on arrays.</li>
+                </ul>
+            </article>
+        </section>
+
         <section id="day-8">
             <article>
                 <h2>JavaScript: Variables and Data Types</h2>
